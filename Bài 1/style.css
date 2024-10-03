@@ -1,0 +1,142 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+#container {
+    width: 80%;
+    margin: auto;
+    background: linear-gradient(#6ec8eb, #65b6ee, #5ea6f2);
+}
+.header .body {
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 8px dotted white;
+}
+.nav-list {
+    display: flex;
+    list-style: none;
+}
+.body .title {
+    color: white;
+    text-shadow: 0px 1px 15px rgb(14, 14, 240);
+}
+.nav-list li {
+    position: relative;
+}
+.nav-list li a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    padding: 10px 35px;
+}
+.sub-menu {
+    background-color: white;
+    list-style: none;
+    position: absolute;
+    width: 140px;
+    top: 30px;
+    display: none;
+}
+.nav-list li:hover .sub-menu {
+    display: block;
+}
+.sub-menu li:hover {
+    background-color: red;
+}
+
+.nav-list .sub-menu a {
+    border-bottom: 1px solid black;
+    display: block;
+    color: red;
+    padding: 8px 16px;
+}
+.main-content {
+    display: flex;
+}
+.main-content {
+    margin-top: 30px;
+    padding: 10px 10px 70px 10px;
+    border-bottom: 8px dotted white;
+}
+.main-right {
+    width: 40%;
+    padding: 5px 10px;
+}
+.main-right .main-title {
+    color: white;
+}
+.main-right .desc {
+    margin-top: 20px;
+    color: white;
+    font-size: 20px;
+    line-height: 25px;
+}
+.main-right .table {
+    margin-left: 35px;
+}
+.main-right .table td {
+    color: white;
+}
+.main-right .table td input {
+    width: 85%;
+    padding: 5px;
+    border-radius: 5px;
+    border: 2px solid rgb(11, 11, 170);
+}
+.main-right .table textarea {
+    border-radius: 5px;
+    border: 2px solid rgb(11, 11, 170);
+}
+.main-right .table select {
+    padding: 3px;
+    border-radius: 7px;
+    border: 2px solid rgb(11, 11, 170);
+}
+.main-right .table button {
+    border-radius: 7px;
+    border: 2px dotted rgb(11, 11, 170);
+    padding: 5px 10px;
+}
+.main-left {
+    width: 60%;
+    padding-left: 100px;
+}
+.main-left .thumb {
+    object-fit: cover;
+    width: 80%;
+    height: 83%;
+}
+.main-left .left-title {
+    margin-top: 20px;
+    margin-left: 30px;
+    font-size: 45px;
+    color: blue;
+    text-shadow: 3px 4px 2px blue;
+}
+.main-left .sub-title {
+    color: blue;
+    font-size: 30px;
+    font-weight: bold;
+    margin-top: 10px;
+    margin-left: 50px;
+}
+.footer {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.footer p {
+    color: white;
+    font-size: 15px;
+}
+.footer sup {
+    position: relative;
+    top: 5px;
+}
+.footer .desc {
+    margin-top: 3px;
+}
